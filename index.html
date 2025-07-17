@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Inicio</title>
+</head>
+<body>
+   <h1>Agenda Personal</h1>
+
+  <form id="evento">
+    <div>
+    <label for="nombre">Ingrese nombre</label>
+    <br>    
+    <input type="text" id="nombre" placeholder="Nombre del evento" required>
+    </div>
+    <div>
+    <label for="date">Ingrese una Fecha</label>
+    <br>
+    <input type="date" id="fecha" required>
+    </div>
+    <div>
+    <label for="time">Ingrese la Hora</label>
+    <br>
+    <input type="time" id="hora" required>
+    </div>
+    <div>
+    <label for="descripcion">Descripciom </label>
+    <br>
+    <textarea id="descripcion" placeholder="Descripción breve" required></textarea>
+    </div>
+    <div>
+    <button type="submit" id="botonAgregar">Agregar Evento</button>
+
+  </form>
+
+  <hr>
+
+
+  <ul id="eventos"></ul>
+
+
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+<script src="/js/index.js"></script>
+</body>
+</html>
