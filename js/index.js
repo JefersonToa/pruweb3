@@ -9,7 +9,7 @@ formulario.addEventListener('submit', function (e) {
   const hora = document.getElementById('hora').value;
   const descripcion = document.getElementById('descripcion').value.trim();
 
-  if (!nombre || !fecha || !hora || !descripcion) {
+  if (nombre, fecha, hora, descripcion) {
     alert('Por favor complete todos los campos');
     return;
   }
